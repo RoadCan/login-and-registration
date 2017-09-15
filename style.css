@@ -1,0 +1,137 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body,html{
+    height: 100%;
+}
+a{
+    text-decoration: none;
+    color: #444;
+}
+.warn{
+  text-align: center;
+  font-size: 12px;
+  color: #ff9800;
+}
+main{
+    height: 100%;
+    background:  url("./img/nba.jpg") center center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+main::before{
+    content: ' ';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.3);
+}
+.clearfix::after{
+    content: ' ';
+    display: block;
+    clear: both;
+}
+.box{
+    display: none;
+}
+.arise{
+    display: block;
+}
+/*头部*/
+header {
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    z-index: 100;
+}
+header .login-box{
+    color: #000;
+    float: right;
+    margin-right: 10px;
+}
+/*登录框*/
+
+.enter,
+.enroll{
+    background: #eee;
+    box-shadow: 0 3px 3px 5px rgba(0,0,0,0.2);
+    border: 1px solid #eee;
+    width: 400px;
+    height: 55%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+.box.open .enter,
+.box.kuan .enroll{
+    transform: rotateY(0deg);
+    transition: all 1s;
+    backface-visibility: hidden;
+
+}
+
+.box.open .enroll,
+.box.kuan .enter{
+    transform: rotateY(180deg);
+    transition: all 1s;
+    backface-visibility: hidden;
+
+}
+
+.enter .enter-cut,
+.enroll .enter-cut{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.enter .enter-menu,
+.enroll .enter-menu{
+    text-align: center;
+}
+.enter .enter-menu a,
+.enroll .enter-menu a{
+    font-size: 20px;
+    margin: 20px 30px;
+    display: inline-block;
+
+}
+.change{
+    border-bottom: 2px solid #333;
+}
+/*用户 密码*/
+.import{
+    text-align: center;
+}
+.import form .front-panel{
+    margin-bottom: 15px;
+    position: relative;
+}
+.import .fn{
+    position: absolute;
+    top:10px;
+    left: 65px;
+}
+.import input[type="text"],
+.import input[type="password"]{
+    padding: 10px 0 10px 30px;
+    width: 70%;
+    font-size: 14px;
+}
+.import input[type="submit"]{
+    padding: 10px 20px;
+    margin-left: -200px;
+    font-size: 16px;
+    background: #fff;
+    border:none;
+    box-shadow: 0 1px 1px 1px rgba(0,0,0,0.3);
+    border-radius: 4px;
+}

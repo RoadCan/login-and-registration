@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录|注册</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" type="text/css" href="./font/iconfont.css">
+</head>
+<body>
+<header>
+    <a href="#" class="login-box">
+        <i class="iconfont icon-fon1"></i>
+    </a>
+</header>
+<main>
+    <div class="box open">
+        <!--注册-->
+        <div class="enroll abb">
+            <a class="enter-cut" href="#">
+                <i class="iconfont icon-fon4"></i>
+            </a>
+            <div class="enter-menu">
+                <a class="login" href="#" >登录</a>
+                <a  class="change signin"  href="#">注册</a>
+            </div>
+            <div class="warn"></div>
+            <div class="import">
+                <form action="/" method="post">
+                    <div class="front-panel">
+                        <i class="iconfont icon-fon2 fn"></i>
+                        <input name="username" type="text" placeholder="输入用户名">
+                    </div>
+                    <div class="front-panel">
+                        <i class="iconfont icon-fon3 fn"></i>
+                        <input name="password" type="password" placeholder="输入密码">
+                    </div>
+                    <div class="front-panel">
+                        <i class="iconfont icon-fon3 fn"></i>
+                        <input name="password2" type="password" placeholder="再次输入密码">
+                    </div>
+                    <div class="front-panel">
+                        <input name="submit" type="submit" value="注册">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!--登录-->
+        <div class="enter abb">
+            <a class="enter-cut" href="#">
+                <i class="iconfont icon-fon4"></i>
+            </a>
+            <div class="enter-menu">
+                <a class="change login" href="#">登录</a>
+                <a class="signin" href="#">注册</a>
+            </div>
+            <div class="warn"></div>
+            <div class="import">
+                <form action="/login" method="post">
+                    <div class="front-panel">
+                        <i class="iconfont icon-fon2 fn"></i>
+                        <input name="username" type="text" placeholder="用户名">
+                    </div>
+                    <div class="front-panel">
+                        <i class="iconfont icon-fon3 fn"></i>
+                        <input name="password" type="password" placeholder="密码">
+                    </div>
+                    <div class="front-panel">
+                        <input name="submit" type="submit" value="登录">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+</main>
+    <script src="script.js"></script>
+</body>
+</html>
